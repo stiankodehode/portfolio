@@ -4,7 +4,7 @@ const LandingPage = () => {
     return (
         <div className="container flex-row">
             <StyledColumn>
-                <h1>Stian Taule</h1>
+                <h1>Stian Kodehode</h1>
                 <h3>Front End Developer</h3>
             </StyledColumn>
             <div className="image-placeholder"></div>
