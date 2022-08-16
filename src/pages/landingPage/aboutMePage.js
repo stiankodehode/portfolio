@@ -1,7 +1,37 @@
+import {
+    StyledH2,
+    StyledFlexContainer,
+    StyledRow,
+} from "../../components/components";
+
 const AboutMePage = () => {
     return (
-        <div>
-            <h1>This is the About me Page</h1>
+        <div className="container">
+            <StyledRow>
+                <StyledFlexContainer>
+                    <StyledH2>About me</StyledH2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                        dolore magna aliquam erat volutpat. Ut wisi enim ad
+                        minim veniam, quis nostrud exerci tation ullamcorper
+                        suscipit lobortis nisl ut aliquip ex ea commodo
+                        consequat. Duis autem vel eum iriure dolor in hendrerit
+                        in vulputate velit esse molestie consequat, vel illum
+                        dolore eu feugiat nulla facilisis at vero eros et
+                        accumsan et iusto odio dignissim qui blandit praesent
+                        luptatum zzril delenit augue duis dolore te feugait
+                        nulla facilisi. Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                        enim ad minim veniam, quis nostrud exerci tation
+                        ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                        commodo consequat. Duis autem vel eum iriure dolor in
+                        hendrerit in vulputate velit esse molestie consequat,
+                        vel illum dolore eu feugiat nulla facilisis at vero eros
+                    </p>
+                </StyledFlexContainer>
+            </StyledRow>
         </div>
     );
 };

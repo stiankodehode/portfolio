@@ -8,30 +8,33 @@ import { StyledNav, StyledNavBox, StyledLink } from "./components/components";
 function App() {
     return (
         <div className="App">
-            <StyledNav>
-                <StyledNavBox>
-                    <StyledLink to="./pages/landingPage">Home</StyledLink>
-                    <StyledLink to="./pages/landingPage/aboutMePage">
-                        About Me
-                    </StyledLink>
-                    <StyledLink to="./pages/landingPage/contactPage">
-                        Contact me
-                    </StyledLink>
-                </StyledNavBox>
-                <img src="#" alt="icon" />
-            </StyledNav>
-
-            <Routes>
-                <Route path="*" element={<LandingPage />} />
-                <Route
-                    path="/pages/landingPage/aboutMePage"
-                    element={<AboutMePage />}
-                />
-                <Route
-                    path="/pages/landingPage/contactPage"
-                    element={<ContactPage />}
-                />
-            </Routes>
+            <div className="nav-background">
+                <StyledNav>
+                    <StyledNavBox>
+                        <StyledLink to="./pages/landingPage">Home</StyledLink>
+                        <StyledLink to="./pages/landingPage/aboutMePage">
+                            About Me
+                        </StyledLink>
+                        <StyledLink to="./pages/landingPage/contactPage">
+                            Contact me
+                        </StyledLink>
+                        <img src="#" alt="icon" />
+                    </StyledNavBox>
+                </StyledNav>
+            </div>
+            <div>
+                <Routes>
+                    <Route path="*" element={<LandingPage />} />
+                    <Route
+                        path="/pages/landingPage/aboutMePage"
+                        element={<AboutMePage />}
+                    />
+                    <Route
+                        path="/pages/landingPage/contactPage"
+                        element={<ContactPage />}
+                    />
+                </Routes>
+            </div>
         </div>
     );
 }

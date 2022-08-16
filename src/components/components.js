@@ -1,34 +1,23 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const StyledParagraph = styled.p`
-    color: red;
-`;
+// Typography
 
-export const StyledHeader = styled.h1`
-    font-size: 28px;
+export const StyledH2 = styled.h2`
     text-decoration: underline;
-    color: salmon;
 `;
 
-export const StyledDiv = styled.div`
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    background-color: green;
-    border-radius: 25%;
-    margin-bottom: 1rem;
-`;
+// Styling
 
 export const StyledNav = styled.nav`
     margin: 0 auto;
-    height: 100px;
-    width: 60%;
+    height: 75px;
+    max-width: 1000px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 `;
-export const StyledNavBox = styled.div`
+export const StyledNavBox = styled.ul`
     margin: 0;
     width: 40%;
     display: flex;
@@ -39,4 +28,19 @@ export const StyledLink = styled(Link)`
     text-decoration: none;
     color: white;
     font-size: 18px;
+`;
+
+export const StyledColumn = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+export const StyledFlexContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+export const StyledRow = styled.div`
+    display: flex;
 `;

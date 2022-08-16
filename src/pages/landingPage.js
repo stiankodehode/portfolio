@@ -1,8 +1,13 @@
+import { StyledColumn } from "../components/components";
+
 const LandingPage = () => {
     return (
-        <div>
-            <p>Landing Page here</p>
-            <h1>AHHHHHHHHHHHhh</h1>
+        <div className="container flex-row">
+            <StyledColumn>
+                <h1>Stian Taule</h1>
+                <h3>Front End Developer</h3>
+            </StyledColumn>
+            <div className="image-placeholder"></div>
         </div>
     );
 };

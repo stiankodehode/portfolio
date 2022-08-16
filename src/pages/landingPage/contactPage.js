@@ -1,7 +1,8 @@
 const ContactPage = () => {
     return (
-        <div>
-            <h1>This is the Contact me page</h1>
+        <div className="container">
+            <h1>This is where the contact details would go would go</h1>
+            <p>if i had any</p>
         </div>
     );
 };
