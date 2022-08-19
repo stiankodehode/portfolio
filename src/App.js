@@ -11,6 +11,7 @@ function App() {
             <div className="nav-background">
                 <StyledNav>
                     <StyledNavBox>
+                        {/* Styled links to 3 different pages */}
                         <StyledLink to="./pages/landingPage">Home</StyledLink>
                         <StyledLink to="./pages/landingPage/aboutMePage">
                             About Me
@@ -23,6 +24,7 @@ function App() {
                 </StyledNav>
             </div>
             <div>
+                {/* Routes */}
                 <Routes>
                     <Route path="*" element={<LandingPage />} />
                     <Route

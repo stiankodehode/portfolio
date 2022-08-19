@@ -44,3 +44,24 @@ export const StyledFlexContainer = styled.div`
 export const StyledRow = styled.div`
     display: flex;
 `;
+
+// Form Style
+export const StyledForm = styled.form`
+    display: flex;
+    flex-direction: column;
+`;
+export const StyledInput = styled.input`
+    width: 25%;
+    margin-bottom: 2em;
+`;
+export const StyledTextarea = styled.textarea`
+    width: 50%;
+    height: 10em;
+    resize: none;
+    margin-bottom: 2em;
+`;
+export const StyledButton = styled.button`
+    border-radius: 5%;
+    padding: 1em;
+    width: 15%;
+`;
