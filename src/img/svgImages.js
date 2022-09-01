@@ -1,4 +1,4 @@
-import { StyledSvg } from "../components/StyledComponents";
+import { StyledSvg } from "../components/styled";
 
 const svgImages = [
     <StyledSvg viewBox="0 0 128 128">

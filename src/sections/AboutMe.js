@@ -2,7 +2,7 @@ import {
     AboutMeContainer,
     StyledH2,
     StyledParagraph,
-} from "../components/StyledComponents";
+} from "../components/styled";
 
 const AboutMe = () => {
     return (

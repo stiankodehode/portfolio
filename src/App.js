@@ -1,8 +1,8 @@
 import Navbar from "./components/Navbar";
-import Hero from "./pages/Hero";
-import AboutMe from "./pages/AboutMe";
+import Hero from "./sections/Hero";
+import AboutMe from "./sections/AboutMe";
 
-import { AppContainer, BackgroundImage } from "./components/StyledComponents";
+import { AppContainer, BackgroundImage } from "./components/styled";
 
 function App() {
     return (

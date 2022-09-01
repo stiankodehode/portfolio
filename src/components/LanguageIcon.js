@@ -1,4 +1,4 @@
-import { StyledSvg } from "./StyledComponents";
+import { StyledSvg } from "./styled";
 
 const LanguageIcon = (props) => {
     console.log(props);

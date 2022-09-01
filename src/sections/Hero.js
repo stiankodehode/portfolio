@@ -4,7 +4,7 @@ import {
     FlexColumnLight,
     ImagePlaceholder,
     StyledParagraph,
-} from "../components/StyledComponents";
+} from "../components/styled";
 
 import LanguageIcon from "../components/LanguageIcon";
 
