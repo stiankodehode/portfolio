@@ -1,8 +1,6 @@
-import {
-    AboutMeContainer,
-    StyledH2,
-    StyledParagraph,
-} from "../components/styled";
+import { AboutMeContainer } from "./AboutMe/styled";
+import { StyledH2 } from "../components/styled";
+import { StyledParagraph } from "./AboutMe/styled";
 
 const AboutMe = () => {
     return (

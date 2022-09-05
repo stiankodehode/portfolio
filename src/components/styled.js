@@ -17,7 +17,11 @@ export const StyledParagraph = styled.p`
 `;
 
 export const StyledH2 = styled.h2`
+    width: 90%;
+    text-align: center;
+    margin: 0.5em 0;
     font-size: 38px;
+    border-bottom: 1px solid #09001e;
 `;
 
 //--------------------//
@@ -30,34 +34,16 @@ export const AppContainer = styled.div`
     margin: 0 auto;
 `;
 
-export const HeroContainer = styled.div`
-    padding: 7em 0;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    height: 100%;
-    align-items: center;
-    width: 100%;
-`;
-
-export const AboutMeContainer = styled.div`
-    height: 100vh;
-    margin: 1em auto;
-    padding: 2em;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffe8ff;
-    border-radius: 10px;
-`;
-
 export const FlexColumn = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
 `;
 
 export const FlexRow = styled.div`
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 `;
 
 export const FlexColumnLight = styled.div`
@@ -70,55 +56,6 @@ export const FlexColumnLight = styled.div`
     background-color: #ffe8ff;
     border-radius: 10px;
 `;
-
-//--------------------//
-//-------NAVBAR-------//
-//--------------------//
-
-export const StyledNav = styled.nav`
-    margin: 0;
-    width: 100%;
-    position: fixed;
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-`;
-
-export const StyledNavList = styled.ul`
-    margin: 0 auto;
-    list-style: none;
-    width: 75%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: flex-end;
-`;
-
-export const StyledNavLink = styled.a`
-    font-size: 20px;
-    font-weight: bold;
-    padding: 1em;
-    cursor: pointer;
-    transition: 0.5s;
-    &:hover {
-        transition: 0.5s;
-        background-color: #a287af;
-    }
-    &:active {
-        transition: 0.5s;
-        background-color: #a287af;
-    }
-`;
-
-export const ImagePlaceholder = styled.div`
-    width: 300px;
-    height: 400px;
-    border-radius: 10px;
-    background-color: #ffe8ff;
-`;
-
 export const StyledSvg = styled.svg`
     max-width: 50px;
     max-height: 50px;
