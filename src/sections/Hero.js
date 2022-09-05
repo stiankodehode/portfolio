@@ -11,7 +11,8 @@ import LanguageIcon from "../components/LanguageIcon";
 
 import svgImages from "../img/svgImages";
 
-const Hero = () => {
+const Hero = (props) => {
+    const content = props.content;
     return (
         <HeroContainer>
             {/* Image and skills */}
@@ -23,13 +24,10 @@ const Hero = () => {
             <aside>
                 <FlexColumn>
                     <FlexColumnLight>
-                        <StyledParagraph>
-                            Hei jeg heter Stian og mer tekst kommer her når jeg
-                            finner ut av hva jeg skal skrive
-                        </StyledParagraph>
+                        <StyledParagraph>{content.text}</StyledParagraph>
 
                         <FlexColumnLight>
-                            <h3>Egenskaper</h3>
+                            <h3>{content.skills}</h3>
                             <FlexRow>
                                 {svgImages.map((svg, idx) => {
                                     return <LanguageIcon key={idx} svg={svg} />;

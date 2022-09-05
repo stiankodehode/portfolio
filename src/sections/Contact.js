@@ -9,7 +9,9 @@ import {
 } from "./Contact/styled";
 import { useState } from "react";
 
-const Contact = () => {
+const Contact = (props) => {
+    const content = props.content;
+
     // Form info State
     const [formInfo, setFormInfo] = useState({
         firstName: "",
@@ -33,7 +35,7 @@ const Contact = () => {
     }
     return (
         <ContactContainer>
-            <StyledH2>Kontakt Meg</StyledH2>
+            <StyledH2>{content.headline}</StyledH2>
             <StyledForm>
                 <StyledInput
                     type="text"

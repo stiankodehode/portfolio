@@ -8,26 +8,27 @@ import {
 import ProjectImg from "../img/tenzies.png";
 import { StyledH2, StyledParagraph } from "../components/styled";
 
-const Projects = () => {
+const Projects = (props) => {
+    const content = props.content;
     return (
         <ProjectsContainer>
-            <StyledH2>Prosjekter</StyledH2>
+            <StyledH2>{content.headline}</StyledH2>
             <Project>
                 <StyledProjectImage src={ProjectImg} alt="my Tenzies app" />
                 <StyledProjectInfo>
-                    <StyledProjectHeadline>Tenzies</StyledProjectHeadline>
-                    <StyledParagraph>
-                        A Tenzies app that tracks your hiscore locally
-                    </StyledParagraph>
+                    <StyledProjectHeadline>
+                        {content.project1.headline}
+                    </StyledProjectHeadline>
+                    <StyledParagraph>{content.project1.text}</StyledParagraph>
                 </StyledProjectInfo>
             </Project>
             <Project>
                 <StyledProjectImage src={ProjectImg} alt="my Tenzies app" />
                 <StyledProjectInfo>
-                    <StyledProjectHeadline>Tenzies</StyledProjectHeadline>
-                    <StyledParagraph>
-                        A Tenzies app that tracks your hiscore locally
-                    </StyledParagraph>
+                    <StyledProjectHeadline>
+                        {content.project1.headline}
+                    </StyledProjectHeadline>
+                    <StyledParagraph>{content.project1.text}</StyledParagraph>
                 </StyledProjectInfo>
             </Project>
         </ProjectsContainer>

@@ -1,7 +1,13 @@
-import { StyledFooter } from "./Footer/styled";
+import { StyledFooter, FooterContainer, FooterLink } from "./Footer/styled";
 
 const Footer = () => {
-    return <StyledFooter></StyledFooter>;
+    return (
+        <StyledFooter>
+            <FooterContainer>
+                <FooterLink href="#">stiankodehode@gmail.com</FooterLink>
+            </FooterContainer>
+        </StyledFooter>
+    );
 };
 
 export default Footer;

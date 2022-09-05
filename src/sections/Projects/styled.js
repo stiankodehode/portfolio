@@ -17,16 +17,23 @@ export const Project = styled.article`
     justify-content: space-between;
     width: 90%;
     display: flex;
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
 `;
 
 export const StyledProjectImage = styled.img`
     max-width: 40%;
     padding: 1em;
+    @media (max-width: 900px) {
+        max-width: 70%;
+        margin: 0 auto;
+    }
 `;
 
 export const StyledProjectHeadline = styled.h3`
     font-size: 28px;
-    margin: 1em 0;
+    margin: 0.5em 0;
 `;
 
 export const StyledProjectInfo = styled.div`
@@ -34,4 +41,9 @@ export const StyledProjectInfo = styled.div`
     flex-direction: column;
     justify-content: center;
     max-width: 50%;
+    @media (max-width: 900px) {
+        align-items: center;
+        margin: 0 auto;
+        max-width: 70%;
+    }
 `;

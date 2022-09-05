@@ -8,6 +8,9 @@ export const HeroContainer = styled.main`
     height: 100%;
     align-items: center;
     width: 100%;
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
 `;
 
 export const ImagePlaceholder = styled.div`
@@ -15,4 +18,9 @@ export const ImagePlaceholder = styled.div`
     height: 400px;
     border-radius: 10px;
     background-color: #ffe8ff;
+    @media (max-width: 900px) {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 2em;
+    }
 `;

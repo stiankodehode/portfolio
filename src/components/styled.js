@@ -47,7 +47,6 @@ export const FlexRow = styled.div`
 `;
 
 export const FlexColumnLight = styled.div`
-    margin: 1em 0;
     padding: 1em;
     max-width: 300px;
     display: flex;
