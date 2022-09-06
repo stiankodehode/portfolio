@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 //--------------------//
 //-------NAVBAR-------//
@@ -28,17 +29,15 @@ export const StyledNavList = styled.ul`
     align-items: center;
 `;
 
-export const StyledNavLink = styled.a`
+export const StyledNavLink = styled(Link)`
     font-size: 20px;
     font-weight: bold;
+    border-radius: 10px;
     padding: 1em;
+    margin: 0 0.5em;
     cursor: pointer;
     transition: 0.5s;
     &:hover {
-        transition: 0.5s;
-        background-color: #a287af;
-    }
-    &:active {
         transition: 0.5s;
         background-color: #a287af;
     }

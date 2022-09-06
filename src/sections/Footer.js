@@ -2,7 +2,7 @@ import { StyledFooter, FooterContainer, FooterLink } from "./Footer/styled";
 
 const Footer = () => {
     return (
-        <StyledFooter>
+        <StyledFooter id="footerID">
             <FooterContainer>
                 <FooterLink href="#">stiankodehode@gmail.com</FooterLink>
             </FooterContainer>

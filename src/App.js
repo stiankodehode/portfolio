@@ -12,7 +12,7 @@ import { AppContainer, BackgroundImage } from "./components/styled";
 
 function App() {
     const [textContent, setTextContent] = useState(Content);
-    const [languageEnglish, setLanguageEnglish] = useState(false);
+    const [languageEnglish, setLanguageEnglish] = useState(true);
 
     const content = languageEnglish
         ? textContent.english

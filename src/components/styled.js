@@ -32,6 +32,8 @@ export const StyledH2 = styled.h2`
 //--------------------//
 
 export const AppContainer = styled.div`
+    display: flex;
+    flex-direction: column;
     width: 75%;
     max-width: 1000px;
     margin: 0 auto;

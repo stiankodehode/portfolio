@@ -5,3 +5,12 @@ body {
     color: #09001e;
     font-family: "Roboto Mono", monospace;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+#page-wrap {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}

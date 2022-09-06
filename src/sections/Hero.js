@@ -18,7 +18,7 @@ import { svgLanguageIcons } from "../img/svgImages";
 const Hero = (props) => {
     const content = props.content;
     return (
-        <HeroContainer>
+        <HeroContainer id="heroID">
             {/* Image and skills */}
             <FlexColumn>
                 <ImagePlaceholder></ImagePlaceholder>

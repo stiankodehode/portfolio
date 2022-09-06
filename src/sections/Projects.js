@@ -12,7 +12,7 @@ import { StyledH2 } from "../components/styled";
 const Projects = (props) => {
     const content = props.content;
     return (
-        <ProjectsContainer>
+        <ProjectsContainer id="projectsID">
             <StyledH2>{content.headline}</StyledH2>
             <Project>
                 <StyledProjectImage src={ProjectImg} alt="my Tenzies app" />

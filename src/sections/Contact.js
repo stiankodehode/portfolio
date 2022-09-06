@@ -34,7 +34,7 @@ const Contact = (props) => {
         console.log("Form Submitted!!!!!!!!!!");
     }
     return (
-        <ContactContainer>
+        <ContactContainer id="contactID">
             <StyledH2>{content.headline}</StyledH2>
             <StyledForm>
                 <StyledInput

@@ -13,18 +13,28 @@ const textContent = {
             headline: "Prosjekter",
             project1: {
                 headline: "Tenzies",
-                text: "A Tenzies app that tracks your hiscore locally",
+                text: "En Tenzies app som lagrer din beste score i local storage",
             },
         },
         footer: {},
     },
     english: {
         hero: {
-            text: "This is english",
+            text: "Hey, my name is Stian. I'm a Frontend developer who always wants to learn something new",
+            skills: "Skills",
         },
-        aboutMe: { headline: "om Meg", text: "Pitch her" },
-        contact: { headline: "kontakt Meg" },
-        projects: { headline: "Prosjekter" },
+        aboutMe: {
+            headline: "about Me",
+            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros",
+        },
+        contact: { headline: "contact Me" },
+        projects: {
+            headline: "Projects",
+            project1: {
+                headline: "Tenzies",
+                text: "A Tenzies app that tracks your hiscore locally",
+            },
+        },
         footer: {},
     },
 };
