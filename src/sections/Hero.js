@@ -5,11 +5,15 @@ import {
     StyledParagraph,
 } from "../components/styled";
 
-import { HeroContainer, ImagePlaceholder } from "./Hero/styled";
+import {
+    HeroContainer,
+    ImagePlaceholder,
+    StyledSubHeadline,
+} from "./Hero/styled";
 
 import LanguageIcon from "../components/LanguageIcon";
 
-import svgImages from "../img/svgImages";
+import { svgLanguageIcons } from "../img/svgImages";
 
 const Hero = (props) => {
     const content = props.content;
@@ -25,15 +29,16 @@ const Hero = (props) => {
                 <FlexColumn>
                     <FlexColumnLight>
                         <StyledParagraph>{content.text}</StyledParagraph>
-
-                        <FlexColumnLight>
-                            <h3>{content.skills}</h3>
+                        <FlexColumn>
+                            <StyledSubHeadline>
+                                {content.skills}
+                            </StyledSubHeadline>
                             <FlexRow>
-                                {svgImages.map((svg, idx) => {
+                                {svgLanguageIcons.map((svg, idx) => {
                                     return <LanguageIcon key={idx} svg={svg} />;
                                 })}
                             </FlexRow>
-                        </FlexColumnLight>
+                        </FlexColumn>
                     </FlexColumnLight>
                 </FlexColumn>
             </aside>

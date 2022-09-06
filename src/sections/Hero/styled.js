@@ -10,6 +10,7 @@ export const HeroContainer = styled.main`
     width: 100%;
     @media (max-width: 900px) {
         flex-direction: column;
+        padding: 6em 0 5em;
     }
 `;
 
@@ -23,4 +24,9 @@ export const ImagePlaceholder = styled.div`
         height: 150px;
         margin-bottom: 2em;
     }
+`;
+
+export const StyledSubHeadline = styled.h3`
+    margin: 0.5em 0;
+    text-align: center;
 `;

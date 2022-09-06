@@ -36,6 +36,10 @@ export const StyledProjectHeadline = styled.h3`
     margin: 0.5em 0;
 `;
 
+export const StyledProjectParagraph = styled.p`
+    font-size: 18px;
+`;
+
 export const StyledProjectInfo = styled.div`
     display: flex;
     flex-direction: column;
@@ -44,6 +48,6 @@ export const StyledProjectInfo = styled.div`
     @media (max-width: 900px) {
         align-items: center;
         margin: 0 auto;
-        max-width: 70%;
+        max-width: 90%;
     }
 `;

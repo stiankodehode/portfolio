@@ -22,6 +22,9 @@ export const StyledH2 = styled.h2`
     margin: 0.5em 0;
     font-size: 38px;
     border-bottom: 1px solid #09001e;
+    @media (max-width: 900px) {
+        font-size: 30px;
+    }
 `;
 
 //--------------------//
@@ -32,6 +35,9 @@ export const AppContainer = styled.div`
     width: 75%;
     max-width: 1000px;
     margin: 0 auto;
+    @media (max-width: 900px) {
+        width: 90%;
+    }
 `;
 
 export const FlexColumn = styled.div`
@@ -42,7 +48,6 @@ export const FlexColumn = styled.div`
 
 export const FlexRow = styled.div`
     display: flex;
-    width: 100%;
     justify-content: space-evenly;
 `;
 
@@ -58,4 +63,5 @@ export const FlexColumnLight = styled.div`
 export const StyledSvg = styled.svg`
     max-width: 50px;
     max-height: 50px;
+    margin: 0 5px;
 `;

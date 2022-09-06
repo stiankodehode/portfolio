@@ -15,7 +15,7 @@ export const ContactContainer = styled.section`
 export const StyledForm = styled.form`
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
 `;
 export const StyledInput = styled.input`
     width: 25%;
@@ -23,6 +23,9 @@ export const StyledInput = styled.input`
     margin-bottom: 1em;
     padding: 0.5em;
     border-radius: 5px;
+    @media (max-width: 900px) {
+        width: 40%;
+    }
 `;
 
 export const StyledInputEmail = styled.input`
@@ -31,6 +34,9 @@ export const StyledInputEmail = styled.input`
     margin-bottom: 1em;
     padding: 0.5em;
     border-radius: 5px;
+    @media (max-width: 900px) {
+        width: 50%;
+    }
 `;
 export const StyledTextarea = styled.textarea`
     width: 75%;
@@ -40,10 +46,16 @@ export const StyledTextarea = styled.textarea`
     margin-bottom: 2em;
     padding: 0.5em;
     border-radius: 5px;
+    @media (max-width: 900px) {
+        width: 70%;
+    }
 `;
 export const StyledButton = styled.button`
     border-radius: 5%;
     padding: 1em;
-    width: 15%;
+    width: 25%;
     border-radius: 10px;
+    @media (max-width: 900px) {
+        width: 40%;
+    }
 `;

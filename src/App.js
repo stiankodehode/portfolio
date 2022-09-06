@@ -17,7 +17,7 @@ function App() {
     const content = languageEnglish
         ? textContent.english
         : textContent.norwegian;
-    console.log(content);
+
     return (
         <BackgroundImage>
             <Navbar />

@@ -4,9 +4,10 @@ import {
     StyledProjectHeadline,
     StyledProjectImage,
     StyledProjectInfo,
+    StyledProjectParagraph,
 } from "./Projects/styled";
 import ProjectImg from "../img/tenzies.png";
-import { StyledH2, StyledParagraph } from "../components/styled";
+import { StyledH2 } from "../components/styled";
 
 const Projects = (props) => {
     const content = props.content;
@@ -19,7 +20,9 @@ const Projects = (props) => {
                     <StyledProjectHeadline>
                         {content.project1.headline}
                     </StyledProjectHeadline>
-                    <StyledParagraph>{content.project1.text}</StyledParagraph>
+                    <StyledProjectParagraph>
+                        {content.project1.text}
+                    </StyledProjectParagraph>
                 </StyledProjectInfo>
             </Project>
             <Project>
@@ -28,7 +31,9 @@ const Projects = (props) => {
                     <StyledProjectHeadline>
                         {content.project1.headline}
                     </StyledProjectHeadline>
-                    <StyledParagraph>{content.project1.text}</StyledParagraph>
+                    <StyledProjectParagraph>
+                        {content.project1.text}
+                    </StyledProjectParagraph>
                 </StyledProjectInfo>
             </Project>
         </ProjectsContainer>

@@ -7,7 +7,9 @@ import styled from "styled-components";
 export const StyledNav = styled.nav`
     margin: 0;
     width: 100%;
+    min-height: 70px;
     position: fixed;
+    display: flex;
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -23,6 +25,7 @@ export const StyledNavList = styled.ul`
     max-width: 1000px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 `;
 
 export const StyledNavLink = styled.a`
@@ -41,3 +44,15 @@ export const StyledNavLink = styled.a`
     }
 `;
 
+export const StyledButton = styled.button`
+    background: none;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+        transition: 0.5s;
+        background-color: #a287af;
+    }
+`;
