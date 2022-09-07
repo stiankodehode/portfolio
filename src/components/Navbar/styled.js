@@ -39,19 +39,7 @@ export const StyledNavLink = styled(Link)`
     transition: 0.5s;
     &:hover {
         transition: 0.5s;
-        background-color: #a287af;
-    }
-`;
-
-export const StyledButton = styled.button`
-    background: none;
-    border: none;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    &:hover {
-        transition: 0.5s;
+        border-radius: 10px;
         background-color: #a287af;
     }
 `;

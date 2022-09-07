@@ -80,6 +80,8 @@
     transition: color 0.2s;
 }
 
-.bm-item:hover {
-    color: #ffffff;
+.active {
+    background: #a287af;
+    border-radius: 10px;
+    color: white;
 }

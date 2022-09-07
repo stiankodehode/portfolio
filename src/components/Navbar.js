@@ -3,14 +3,19 @@ import { useState } from "react";
 import "./Navbar/navbar.css";
 import HamurgerMenu from "./HamburgerMenu";
 
-const Navbar = () => {
+const Navbar = (props) => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [isOpen, setIsOpen] = useState(false);
+
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
+    const navItems = props.content;
 
     window.addEventListener("resize", () => {
         setWindowWidth(window.innerWidth);
     });
-
-    const activeStyle = { backgroundColor: "#a287af" };
 
     if (windowWidth > 900)
         return (
@@ -22,9 +27,9 @@ const Navbar = () => {
                         spy={true}
                         smooth={true}
                         offset={-100}
-                        duration={100}
+                        duration={150}
                     >
-                        Hjem
+                        {navItems.hero.navbar}
                     </StyledNavLink>
                     <StyledNavLink
                         to="aboutMeID"
@@ -32,9 +37,9 @@ const Navbar = () => {
                         spy={true}
                         smooth={true}
                         offset={-100}
-                        duration={100}
+                        duration={150}
                     >
-                        om Meg
+                        {navItems.aboutMe.navbar}
                     </StyledNavLink>
                     <StyledNavLink
                         to="projectsID"
@@ -42,25 +47,25 @@ const Navbar = () => {
                         spy={true}
                         smooth={true}
                         offset={-100}
-                        duration={100}
+                        duration={150}
                     >
-                        Prosjekter
+                        {navItems.projects.navbar}
                     </StyledNavLink>
                     <StyledNavLink
                         to="contactID"
                         activeClass="active"
                         spy={true}
                         smooth={true}
-                        offset={-90}
-                        duration={100}
+                        offset={-100}
+                        duration={150}
                     >
-                        Kontakt
+                        {navItems.contact.navbar}
                     </StyledNavLink>
                 </StyledNavList>
             </StyledNav>
         );
 
-    return <HamurgerMenu />;
+    return <HamurgerMenu navItems={navItems} />;
 };
 
 export default Navbar;

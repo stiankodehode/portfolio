@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.main`
-    padding: 7em 0 5em;
-    margin: 0 auto;
+    padding: 7em 0 0;
+    margin: 0 auto 5em;
     display: flex;
     justify-content: space-around;
     height: 100%;

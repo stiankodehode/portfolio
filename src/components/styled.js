@@ -67,3 +67,7 @@ export const StyledSvg = styled.svg`
     max-height: 50px;
     margin: 0 5px;
 `;
+
+export const Spacer = styled.div`
+    margin: 25px 0;
+`;
