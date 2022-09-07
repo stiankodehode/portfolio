@@ -16,7 +16,7 @@ const HamurgerMenu = (props) => {
         <>
             <StyledNav />
 
-            <Menu right isOpen={isOpen} onOpen={toggleIsOpen}>
+            <Menu right onStateChange={toggleIsOpen} isOpen={isOpen}>
                 <StyledNavLink
                     onClick={toggleIsOpen}
                     to="heroID"
