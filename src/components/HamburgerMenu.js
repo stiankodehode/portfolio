@@ -5,20 +5,28 @@ import { StyledNavLink } from "./Navbar/styled";
 import { StyledNav } from "./Navbar/styled";
 
 const HamurgerMenu = (props) => {
-    const navItems = props.navItems;
+    const [navItems, setNavItems] = useState(props.navItems);
     const [isOpen, setIsOpen] = useState(false);
 
-    const toggleIsOpen = () => {
+    const closeMenu = () => {
         setIsOpen((oldState) => !oldState);
     };
+
+    console.log(isOpen);
 
     return (
         <>
             <StyledNav />
 
-            <Menu right onStateChange={toggleIsOpen} isOpen={isOpen}>
+            <Menu
+                right
+                onOpen={() => {
+                    setIsOpen(true);
+                }}
+                isOpen={isOpen}
+            >
                 <StyledNavLink
-                    onClick={toggleIsOpen}
+                    onClick={closeMenu}
                     to="heroID"
                     activeClass="active"
                     spy={true}
@@ -29,7 +37,7 @@ const HamurgerMenu = (props) => {
                     {navItems.hero.navbar}
                 </StyledNavLink>
                 <StyledNavLink
-                    onClick={toggleIsOpen}
+                    onClick={closeMenu}
                     to="aboutMeID"
                     activeClass="active"
                     spy={true}
@@ -40,7 +48,7 @@ const HamurgerMenu = (props) => {
                     {navItems.aboutMe.navbar}
                 </StyledNavLink>
                 <StyledNavLink
-                    onClick={toggleIsOpen}
+                    onClick={closeMenu}
                     to="projectsID"
                     activeClass="active"
                     spy={true}
@@ -51,7 +59,7 @@ const HamurgerMenu = (props) => {
                     {navItems.projects.navbar}
                 </StyledNavLink>
                 <StyledNavLink
-                    onClick={toggleIsOpen}
+                    onClick={closeMenu}
                     to="contactID"
                     activeClass="active"
                     spy={true}

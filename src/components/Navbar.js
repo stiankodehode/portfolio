@@ -5,11 +5,6 @@ import HamurgerMenu from "./HamburgerMenu";
 
 const Navbar = (props) => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [isOpen, setIsOpen] = useState(false);
-
-    const closeMenu = () => {
-        setIsOpen(false);
-    };
 
     const navItems = props.content;
 
