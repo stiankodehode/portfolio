@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import BackgroundImg from "../img/background.jpg";
 
+// GLOBAL COMPONENTS //
+
 export const BackgroundImage = styled.div`
     background-image: url(${BackgroundImg});
     background-repeat: none;

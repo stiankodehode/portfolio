@@ -23,14 +23,11 @@ function App() {
             <Navbar content={content} />
             <AppContainer>
                 <Hero content={content.hero} />
-                <Spacer />
                 <AboutMe content={content.aboutMe} />
-                <Spacer />
                 <Projects content={content.projects} />
-                <Spacer />
                 <Contact content={content.contact} />
             </AppContainer>
-            <Footer />
+            <Footer content={content.footer} />
         </BackgroundImage>
     );
 }

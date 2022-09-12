@@ -1,3 +1,6 @@
+import ProjectImage1 from "../img/tenzies.png";
+import ProjectImage2 from "../img/pokedex.png";
+
 const textContent = {
     norwegian: {
         hero: {
@@ -14,12 +17,20 @@ const textContent = {
         projects: {
             navbar: "Prosjekter",
             headline: "Prosjekter",
-            project1: {
-                headline: "Tenzies",
-                text: "En Tenzies app som lagrer din beste score i local storage",
-            },
+            projects: [
+                {
+                    headline: "Tenzies",
+                    text: "En Tenzies app som lagrer din beste score i local storage",
+                    image: ProjectImage1,
+                },
+                {
+                    headline: "Pokedex",
+                    text: "Et Pokedex med hjelp av PokeAPI som lar deg bla gjennom og finne informasjon om forskjellige pokemon",
+                    image: ProjectImage2,
+                },
+            ],
         },
-        footer: {},
+        footer: { contact: "Kontakt:", socials: "Sosiale media:" },
     },
     english: {
         hero: {
@@ -36,12 +47,20 @@ const textContent = {
         projects: {
             navbar: "Projects",
             headline: "Projects",
-            project1: {
-                headline: "Tenzies",
-                text: "A Tenzies app that tracks your hiscore locally",
-            },
+            projects: [
+                {
+                    headline: "Tenzies",
+                    text: "A Tenzies app that lets you store your hiscore in local storage",
+                    image: ProjectImage1,
+                },
+                {
+                    headline: "Pokedex",
+                    text: "A Pokedex with the help of PokeAPI that lets you gather info on different pokemon",
+                    image: ProjectImage2,
+                },
+            ],
         },
-        footer: {},
+        footer: { contact: "Contact:", socials: "Social links:" },
     },
 };
 

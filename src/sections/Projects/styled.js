@@ -12,7 +12,7 @@ export const ProjectsContainer = styled.section`
     width: 100%;
 `;
 
-export const Project = styled.article`
+export const ProjectBox = styled.article`
     border-bottom: 1px solid #09001e;
     justify-content: space-between;
     width: 90%;
@@ -23,10 +23,11 @@ export const Project = styled.article`
 `;
 
 export const StyledProjectImage = styled.img`
-    max-width: 40%;
+    max-width: 50%;
     padding: 1em;
+    margin-right: 1em;
     @media (max-width: 900px) {
-        max-width: 70%;
+        max-width: 75%;
         margin: 0 auto;
     }
 `;
@@ -34,6 +35,7 @@ export const StyledProjectImage = styled.img`
 export const StyledProjectHeadline = styled.h3`
     font-size: 28px;
     margin: 0.5em 0;
+    text-decoration: underline;
 `;
 
 export const StyledProjectParagraph = styled.p`

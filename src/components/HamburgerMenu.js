@@ -8,20 +8,21 @@ const HamurgerMenu = (props) => {
     const [navItems, setNavItems] = useState(props.navItems);
     const [isOpen, setIsOpen] = useState(false);
 
+    // Function for closing the hamburger menu when a link is clicked
     const closeMenu = () => {
         setIsOpen((oldState) => !oldState);
     };
 
-    console.log(isOpen);
-
     return (
         <>
             <StyledNav />
-
             <Menu
                 right
                 onOpen={() => {
                     setIsOpen(true);
+                }}
+                onClose={() => {
+                    setIsOpen(false);
                 }}
                 isOpen={isOpen}
             >

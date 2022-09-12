@@ -4,13 +4,15 @@ import "./Navbar/navbar.css";
 import HamurgerMenu from "./HamburgerMenu";
 
 const Navbar = (props) => {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
     const navItems = props.content;
 
+    // State and event listener for checking screen size, so it can update on the fly.
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     window.addEventListener("resize", () => {
         setWindowWidth(window.innerWidth);
     });
+
+    // render the normal navbar if window width is bigger than 900px
 
     if (windowWidth > 900)
         return (
@@ -60,6 +62,7 @@ const Navbar = (props) => {
             </StyledNav>
         );
 
+    // render hamburger menu if screen size is less than 900px
     return <HamurgerMenu navItems={navItems} />;
 };
 

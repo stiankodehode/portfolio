@@ -34,7 +34,7 @@ export const StyledNavLink = styled(Link)`
     font-weight: bold;
     border-radius: 10px;
     padding: 1em;
-    margin: 0 0.5em;
+    margin-left: 0.5em;
     cursor: pointer;
     transition: 0.5s;
     &:hover {
