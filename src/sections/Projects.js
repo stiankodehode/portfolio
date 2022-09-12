@@ -7,15 +7,18 @@ const Projects = (props) => {
     const [projectContent, setProjectContent] = useState(
         props.content.projects
     );
-    console.log(projectContent);
     const content = props.content;
+
+    const projects = projectContent.map((proj, idx) => {
+        const lastProject = idx === projectContent.length - 1 ? true : false;
+
+        return <Project key={idx} content={proj} lastProject={lastProject} />;
+    });
 
     return (
         <ProjectsContainer id="projectsID">
             <StyledH2>{content.headline}</StyledH2>
-            {projectContent.map((proj, idx) => {
-                return <Project key={idx} content={proj} />;
-            })}
+            {projects}
         </ProjectsContainer>
     );
 };

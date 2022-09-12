@@ -13,7 +13,9 @@ export const ProjectsContainer = styled.section`
 `;
 
 export const ProjectBox = styled.article`
-    border-bottom: 1px solid #09001e;
+    padding-bottom: 2em;
+    border-bottom: ${(props) => (props.lastProject ? "" : "1px solid black")};
+    margin: 1em 0;
     justify-content: space-between;
     width: 90%;
     display: flex;
@@ -25,7 +27,7 @@ export const ProjectBox = styled.article`
 export const StyledProjectImage = styled.img`
     max-width: 50%;
     padding: 1em;
-    margin-right: 1em;
+    margin-right: 2em;
     @media (max-width: 900px) {
         max-width: 75%;
         margin: 0 auto;

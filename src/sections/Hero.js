@@ -12,8 +12,11 @@ import {
 } from "./Hero/styled";
 
 import LanguageIcon from "../components/LanguageIcon";
-
 import { svgLanguageIcons } from "../img/svgImages";
+
+const svgIcons = svgLanguageIcons.map((svg, idx) => {
+    return <LanguageIcon key={idx} svg={svg} />;
+});
 
 const Hero = (props) => {
     const content = props.content;
@@ -33,11 +36,7 @@ const Hero = (props) => {
                             <StyledSubHeadline>
                                 {content.skills}
                             </StyledSubHeadline>
-                            <FlexRow>
-                                {svgLanguageIcons.map((svg, idx) => {
-                                    return <LanguageIcon key={idx} svg={svg} />;
-                                })}
-                            </FlexRow>
+                            <FlexRow>{svgIcons}</FlexRow>
                         </FlexColumn>
                     </FlexColumnLight>
                 </FlexColumn>

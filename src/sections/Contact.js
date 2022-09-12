@@ -37,30 +37,38 @@ const Contact = (props) => {
         <ContactContainer id="contactID">
             <StyledH2>{content.headline}</StyledH2>
             <StyledForm>
-                <StyledInput
-                    type="text"
-                    name="firstName"
-                    onChange={handleChange}
-                    placeholder="First Name"
-                ></StyledInput>
-                <StyledInput
-                    type="text"
-                    name="lastName"
-                    onChange={handleChange}
-                    placeholder="Last Name"
-                ></StyledInput>
-                <StyledInputEmail
-                    type="email"
-                    name="email"
-                    onChange={handleChange}
-                    placeholder="email@email.com"
-                ></StyledInputEmail>
-                <StyledTextarea
-                    type="text"
-                    name="message"
-                    onChange={handleChange}
-                    placeholder="Type your message here"
-                ></StyledTextarea>
+                <>
+                    <StyledInput
+                        type="text"
+                        name="firstName"
+                        onChange={handleChange}
+                        placeholder="First Name"
+                    ></StyledInput>
+                </>
+                <>
+                    <StyledInput
+                        type="text"
+                        name="lastName"
+                        onChange={handleChange}
+                        placeholder="Last Name"
+                    ></StyledInput>
+                </>
+                <>
+                    <StyledInputEmail
+                        type="email"
+                        name="email"
+                        onChange={handleChange}
+                        placeholder="email@email.com"
+                    ></StyledInputEmail>
+                </>
+                <>
+                    <StyledTextarea
+                        type="text"
+                        name="message"
+                        onChange={handleChange}
+                        placeholder="Type your message here"
+                    ></StyledTextarea>
+                </>
                 <StyledButton onClick={handleSubmit}>Submit</StyledButton>
             </StyledForm>
         </ContactContainer>

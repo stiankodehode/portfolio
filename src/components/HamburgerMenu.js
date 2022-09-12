@@ -13,9 +13,19 @@ const HamurgerMenu = (props) => {
         setIsOpen((oldState) => !oldState);
     };
 
+    const linkProps = {
+        onClick: closeMenu,
+        activeClass: "active",
+        spy: true,
+        smooth: true,
+        offset: -100,
+        duration: 150,
+    };
+
     return (
         <>
             <StyledNav />
+
             <Menu
                 right
                 onOpen={() => {
@@ -26,48 +36,16 @@ const HamurgerMenu = (props) => {
                 }}
                 isOpen={isOpen}
             >
-                <StyledNavLink
-                    onClick={closeMenu}
-                    to="heroID"
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={150}
-                >
+                <StyledNavLink {...linkProps} to="heroID">
                     {navItems.hero.navbar}
                 </StyledNavLink>
-                <StyledNavLink
-                    onClick={closeMenu}
-                    to="aboutMeID"
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={150}
-                >
+                <StyledNavLink {...linkProps} to="aboutMeID">
                     {navItems.aboutMe.navbar}
                 </StyledNavLink>
-                <StyledNavLink
-                    onClick={closeMenu}
-                    to="projectsID"
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={150}
-                >
+                <StyledNavLink {...linkProps} to="projectsID">
                     {navItems.projects.navbar}
                 </StyledNavLink>
-                <StyledNavLink
-                    onClick={closeMenu}
-                    to="contactID"
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={150}
-                >
+                <StyledNavLink {...linkProps} to="contactID">
                     {navItems.contact.navbar}
                 </StyledNavLink>
             </Menu>

@@ -21,6 +21,7 @@ export const StyledParagraph = styled.p`
 export const StyledH2 = styled.h2`
     width: 90%;
     text-align: center;
+    padding-bottom: 0.5em;
     margin: 0.5em 0;
     font-size: 38px;
     border-bottom: 1px solid #09001e;

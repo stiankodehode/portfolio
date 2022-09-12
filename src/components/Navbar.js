@@ -14,48 +14,28 @@ const Navbar = (props) => {
 
     // render the normal navbar if window width is bigger than 900px
 
+    const linkProps = {
+        activeClass: "active",
+        spy: true,
+        smooth: true,
+        offset: -100,
+        duration: 150,
+    };
+
     if (windowWidth > 900)
         return (
             <StyledNav>
                 <StyledNavList>
-                    <StyledNavLink
-                        to="heroID"
-                        activeClass="active"
-                        spy={true}
-                        smooth={true}
-                        offset={-100}
-                        duration={150}
-                    >
+                    <StyledNavLink {...linkProps} to="heroID">
                         {navItems.hero.navbar}
                     </StyledNavLink>
-                    <StyledNavLink
-                        to="aboutMeID"
-                        activeClass="active"
-                        spy={true}
-                        smooth={true}
-                        offset={-100}
-                        duration={150}
-                    >
+                    <StyledNavLink {...linkProps} to="aboutMeID">
                         {navItems.aboutMe.navbar}
                     </StyledNavLink>
-                    <StyledNavLink
-                        to="projectsID"
-                        activeClass="active"
-                        spy={true}
-                        smooth={true}
-                        offset={-100}
-                        duration={150}
-                    >
+                    <StyledNavLink {...linkProps} to="projectsID">
                         {navItems.projects.navbar}
                     </StyledNavLink>
-                    <StyledNavLink
-                        to="contactID"
-                        activeClass="active"
-                        spy={true}
-                        smooth={true}
-                        offset={-100}
-                        duration={150}
-                    >
+                    <StyledNavLink {...linkProps} to="contactID">
                         {navItems.contact.navbar}
                     </StyledNavLink>
                 </StyledNavList>
