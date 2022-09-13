@@ -1,7 +1,17 @@
-import { StyledNav, StyledNavLink, StyledNavList } from "./Navbar/styled";
+import {
+    StyledButton,
+    StyledDropDown,
+    StyledDropDownContent,
+    StyledNav,
+    StyledNavLink,
+    StyledNavList,
+    StyledNavItems,
+    StyledImage,
+} from "./Navbar/styled";
 import { useState } from "react";
 import "./Navbar/navbar.css";
 import HamurgerMenu from "./HamburgerMenu";
+import DropdownSVG from "../img/dropdown.svg";
 
 const Navbar = (props) => {
     const navItems = props.content;
@@ -12,8 +22,7 @@ const Navbar = (props) => {
         setWindowWidth(window.innerWidth);
     });
 
-    // render the normal navbar if window width is bigger than 900px
-
+    // reapeating link props.
     const linkProps = {
         activeClass: "active",
         spy: true,
@@ -22,22 +31,38 @@ const Navbar = (props) => {
         duration: 150,
     };
 
+    // render the normal navbar if window width is bigger than 900px
+
     if (windowWidth > 900)
         return (
             <StyledNav>
                 <StyledNavList>
-                    <StyledNavLink {...linkProps} to="heroID">
-                        {navItems.hero.navbar}
-                    </StyledNavLink>
-                    <StyledNavLink {...linkProps} to="aboutMeID">
-                        {navItems.aboutMe.navbar}
-                    </StyledNavLink>
-                    <StyledNavLink {...linkProps} to="projectsID">
-                        {navItems.projects.navbar}
-                    </StyledNavLink>
-                    <StyledNavLink {...linkProps} to="contactID">
-                        {navItems.contact.navbar}
-                    </StyledNavLink>
+                    <StyledDropDown>
+                        <span>{props.english ? "ENG" : "NOR"}</span>
+                        <StyledImage src={DropdownSVG} alt="dropdown arrow" />
+                        <StyledDropDownContent>
+                            <StyledButton onClick={props.toggleNorwegian}>
+                                Norsk
+                            </StyledButton>
+                            <StyledButton onClick={props.toggleEnglish}>
+                                English
+                            </StyledButton>
+                        </StyledDropDownContent>
+                    </StyledDropDown>
+                    <StyledNavItems>
+                        <StyledNavLink {...linkProps} to="heroID">
+                            {navItems.hero.navbar}
+                        </StyledNavLink>
+                        <StyledNavLink {...linkProps} to="aboutMeID">
+                            {navItems.aboutMe.navbar}
+                        </StyledNavLink>
+                        <StyledNavLink {...linkProps} to="projectsID">
+                            {navItems.projects.navbar}
+                        </StyledNavLink>
+                        <StyledNavLink {...linkProps} to="contactID">
+                            {navItems.contact.navbar}
+                        </StyledNavLink>
+                    </StyledNavItems>
                 </StyledNavList>
             </StyledNav>
         );

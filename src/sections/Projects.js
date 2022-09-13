@@ -4,9 +4,7 @@ import { StyledH2 } from "../components/styled";
 import { useState } from "react";
 
 const Projects = (props) => {
-    const [projectContent, setProjectContent] = useState(
-        props.content.projects
-    );
+    const projectContent = props.content.projects;
     const content = props.content;
 
     const projects = projectContent.map((proj, idx) => {

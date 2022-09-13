@@ -8,19 +8,28 @@ import Content from "./text/content";
 
 import { useState } from "react";
 
-import { AppContainer, BackgroundImage, Spacer } from "./components/styled";
+import { AppContainer, BackgroundImage } from "./components/styled";
 
 function App() {
-    const [textContent, setTextContent] = useState(Content);
     const [languageEnglish, setLanguageEnglish] = useState(false);
 
-    const content = languageEnglish
-        ? textContent.english
-        : textContent.norwegian;
+    const content = languageEnglish ? Content.english : Content.norwegian;
+
+    const toggleEnglish = () => {
+        setLanguageEnglish(true);
+    };
+    const toggleNorwegian = () => {
+        setLanguageEnglish(false);
+    };
 
     return (
         <BackgroundImage>
-            <Navbar content={content} />
+            <Navbar
+                english={languageEnglish}
+                toggleNorwegian={toggleNorwegian}
+                toggleEnglish={toggleEnglish}
+                content={content}
+            />
             <AppContainer>
                 <Hero content={content.hero} />
                 <AboutMe content={content.aboutMe} />
