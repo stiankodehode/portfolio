@@ -25,6 +25,7 @@ export const StyledNavItems = styled.div`
 
 export const StyledNavList = styled.ul`
     margin: 0 auto;
+    padding: 0;
     list-style: none;
     width: 75%;
     max-width: 1000px;

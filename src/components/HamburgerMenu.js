@@ -2,8 +2,14 @@ import { useState } from "react";
 import { stack as Menu } from "react-burger-menu";
 import "./HamburgerMenu/hamburgerMenu.css";
 import { StyledNavLink } from "./Navbar/styled";
-import { StyledNav } from "./Navbar/styled";
-
+import {
+    StyledNav,
+    StyledDropDown,
+    StyledButton,
+    StyledImage,
+    StyledDropDownContent,
+} from "./Navbar/styled";
+import DropdownSVG from "../img/dropdown.svg";
 const HamurgerMenu = (props) => {
     const [navItems, setNavItems] = useState(props.navItems);
     const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +19,7 @@ const HamurgerMenu = (props) => {
         setIsOpen((oldState) => !oldState);
     };
 
+    console.log(props);
     const linkProps = {
         onClick: closeMenu,
         activeClass: "active",
@@ -48,6 +55,22 @@ const HamurgerMenu = (props) => {
                 <StyledNavLink {...linkProps} to="contactID">
                     {navItems.contact.navbar}
                 </StyledNavLink>
+                <StyledDropDown>
+                    <span>{props.english ? "ENG" : "NOR"}</span>
+                    <StyledImage src={DropdownSVG} alt="dropdown arrow" />
+                    <StyledDropDownContent>
+                        <StyledButton
+                            onClick={props.languageToggle.toggleNorwegian}
+                        >
+                            Norsk
+                        </StyledButton>
+                        <StyledButton
+                            onClick={props.languageToggle.toggleEnglish}
+                        >
+                            English
+                        </StyledButton>
+                    </StyledDropDownContent>
+                </StyledDropDown>
             </Menu>
         </>
     );

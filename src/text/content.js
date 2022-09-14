@@ -60,7 +60,7 @@ const textContent = {
                 },
             ],
         },
-        footer: { contact: "Contact:", socials: "Social links:" },
+        footer: { contact: "Contact:", socials: "Social media:" },
     },
 };
 

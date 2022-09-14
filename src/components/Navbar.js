@@ -68,7 +68,7 @@ const Navbar = (props) => {
         );
 
     // render hamburger menu if screen size is less than 900px
-    return <HamurgerMenu navItems={navItems} />;
+    return <HamurgerMenu languageToggle={props} navItems={navItems} />;
 };
 
 export default Navbar;

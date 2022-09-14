@@ -25,8 +25,15 @@ export const FooterLink = styled.a`
 `;
 
 export const FlexColumn = styled.div`
-    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+`;
+
+export const FlexRow = styled.div`
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: 900px) {
+        justify-content: flex-start;
+    }
 `;

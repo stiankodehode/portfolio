@@ -4,7 +4,14 @@ import {
     FooterLink,
     FlexColumn,
     StyledHeading,
+    FlexRow,
 } from "./Footer/styled";
+
+import { socialIcons } from "../img/svgImages";
+
+const mappedSocialIcons = socialIcons.map((icon) => {
+    return <FooterLink href={icon.link}>{icon.svg}</FooterLink>;
+});
 
 const Footer = (props) => {
     const content = props.content;
@@ -19,8 +26,7 @@ const Footer = (props) => {
                 </FlexColumn>
                 <FlexColumn>
                     <StyledHeading>{content.socials}</StyledHeading>
-                    <FooterLink href="#">stiankodehode@gmail.com</FooterLink>
-                    <FooterLink href="#">12345678</FooterLink>
+                    <FlexRow>{mappedSocialIcons}</FlexRow>
                 </FlexColumn>
             </FooterContainer>
         </StyledFooter>
