@@ -96,3 +96,10 @@ export const StyledDropDown = styled.a`
 export const StyledImage = styled.img`
     margin: 0 0 3px 5px;
 `;
+
+export const FlexRow = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+`;

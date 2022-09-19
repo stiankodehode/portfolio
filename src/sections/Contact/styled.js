@@ -18,36 +18,46 @@ export const StyledForm = styled.form`
     width: 90%;
 `;
 export const StyledInput = styled.input`
-    width: 25%;
+    width: 90%;
+    max-width: 175px;
     font-size: 16px;
     margin-bottom: 1em;
     padding: 0.5em;
+    border: 2px solid #09001e3f;
     border-radius: 5px;
     @media (max-width: 900px) {
-        width: 40%;
+        max-width: 10em;
+    }
+    &:focus {
+        border: 2px solid #09001e;
     }
 `;
 
 export const StyledInputEmail = styled.input`
-    width: 40%;
+    max-width: 270px;
     font-size: 16px;
     margin-bottom: 1em;
     padding: 0.5em;
+    border: 2px solid #09001e3f;
     border-radius: 5px;
-    @media (max-width: 900px) {
-        width: 50%;
+    &:focus {
+        border: 2px solid #09001e;
     }
 `;
-export const StyledTextarea = styled.textarea`
+export const StyledTextArea = styled.textarea`
     width: 75%;
-    height: 10em;
+    height: 8em;
     font-size: 16px;
     resize: none;
     margin-bottom: 2em;
     padding: 0.5em;
+    border: 2px solid #09001e3f;
     border-radius: 5px;
     @media (max-width: 900px) {
-        width: 70%;
+        width: 90%;
+    }
+    &:focus {
+        border: 2px solid #09001e;
     }
 `;
 export const StyledButton = styled.button`
@@ -55,7 +65,24 @@ export const StyledButton = styled.button`
     padding: 1em;
     width: 25%;
     border-radius: 10px;
+    cursor: pointer;
     @media (max-width: 900px) {
         width: 40%;
     }
+`;
+
+export const StyledFlexRow = styled.div`
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    @media (max-width: 900px) {
+        width: 90%;
+    }
+`;
+
+export const StyledFlexColumn = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 `;

@@ -4,10 +4,15 @@ import { StyledParagraph } from "./AboutMe/styled";
 
 const AboutMe = (props) => {
     const content = props.content;
+
+    //Mapping each paragraph
+    const mappedParagraphs = props.content.text.map((p, idx) => {
+        return <StyledParagraph key={idx}>{p}</StyledParagraph>;
+    });
     return (
         <AboutMeContainer id="aboutMeID">
             <StyledH2>{content.headline}</StyledH2>
-            <StyledParagraph>{content.text}</StyledParagraph>
+            {mappedParagraphs}
         </AboutMeContainer>
     );
 };

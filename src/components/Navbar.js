@@ -7,11 +7,13 @@ import {
     StyledNavList,
     StyledNavItems,
     StyledImage,
+    FlexRow,
 } from "./Navbar/styled";
 import { useState } from "react";
 import "./Navbar/navbar.css";
 import HamurgerMenu from "./HamburgerMenu";
 import DropdownSVG from "../img/dropdown.svg";
+import languageSVG from "../img/languageSVG.svg";
 
 const Navbar = (props) => {
     const navItems = props.content;
@@ -33,13 +35,22 @@ const Navbar = (props) => {
 
     // render the normal navbar if window width is bigger than 900px
 
-    if (windowWidth > 900)
+    if (windowWidth > 950)
         return (
             <StyledNav>
                 <StyledNavList>
                     <StyledDropDown>
-                        <span>{props.english ? "ENG" : "NOR"}</span>
-                        <StyledImage src={DropdownSVG} alt="dropdown arrow" />
+                        <FlexRow>
+                            <StyledImage
+                                src={languageSVG}
+                                alt="language icon"
+                            />
+                            <span>{props.english ? "ENG" : "NO"}</span>
+                            <StyledImage
+                                src={DropdownSVG}
+                                alt="dropdown arrow"
+                            />
+                        </FlexRow>
                         <StyledDropDownContent>
                             <StyledButton onClick={props.toggleNorwegian}>
                                 Norsk
@@ -68,7 +79,13 @@ const Navbar = (props) => {
         );
 
     // render hamburger menu if screen size is less than 900px
-    return <HamurgerMenu languageToggle={props} navItems={navItems} />;
+    return (
+        <HamurgerMenu
+            english={props.english}
+            languageToggle={props}
+            navItems={navItems}
+        />
+    );
 };
 
 export default Navbar;

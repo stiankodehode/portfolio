@@ -4,6 +4,7 @@ import {
     StyledProjectInfo,
     StyledProjectHeadline,
     StyledProjectParagraph,
+    StyledLink,
 } from "../sections/Projects/styled";
 
 // This is a component for the projects. If lastProject prop is true it doesnt render an underline.
@@ -21,6 +22,12 @@ const Project = (props) => {
                 <StyledProjectParagraph>
                     {props.content.text}
                 </StyledProjectParagraph>
+                <StyledLink href={props.content.githubPages}>
+                    Github pages
+                </StyledLink>
+                <StyledLink href={props.content.github}>
+                    Github repository
+                </StyledLink>
             </StyledProjectInfo>
         </ProjectBox>
     );

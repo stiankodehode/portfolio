@@ -55,3 +55,10 @@ export const StyledProjectInfo = styled.div`
         max-width: 90%;
     }
 `;
+
+export const StyledLink = styled.a`
+    color: #1b074b;
+    &:hover {
+        color: rgb(181, 73, 170);
+    }
+`;

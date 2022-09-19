@@ -9,9 +9,25 @@ import {
 
 import { socialIcons } from "../img/svgImages";
 
-const mappedSocialIcons = socialIcons.map((icon) => {
-    return <FooterLink href={icon.link}>{icon.svg}</FooterLink>;
+// mapping the social icons that is brought in externally
+const mappedSocialIcons = socialIcons.map((icon, idx) => {
+    return (
+        <FooterLink key={idx} href={icon.link}>
+            {icon.svg}
+        </FooterLink>
+    );
 });
+
+// this copies the textContent of the target to the clipboard
+const clipboardCopy = (e) => {
+    const copyText = e.target.textContent;
+    navigator.clipboard
+        .writeText(copyText)
+        .then(() => {
+            alert("Copied to clipboard");
+        })
+        .catch("There was an error");
+};
 
 const Footer = (props) => {
     const content = props.content;
@@ -21,8 +37,10 @@ const Footer = (props) => {
             <FooterContainer>
                 <FlexColumn>
                     <StyledHeading>{content.contact}</StyledHeading>
-                    <FooterLink href="#">stiankodehode@gmail.com</FooterLink>
-                    <FooterLink href="#">12345678</FooterLink>
+                    <FooterLink onClick={clipboardCopy}>
+                        stiankodehode@gmail.com
+                    </FooterLink>
+                    <FooterLink onClick={clipboardCopy}>12345678</FooterLink>
                 </FlexColumn>
                 <FlexColumn>
                     <StyledHeading>{content.socials}</StyledHeading>

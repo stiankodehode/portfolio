@@ -20,7 +20,7 @@ export const StyledParagraph = styled.p`
 
 export const StyledH2 = styled.h2`
     width: 90%;
-    text-align: center;
+    /* text-align: center; */
     padding-bottom: 0.5em;
     margin: 0.5em 0;
     font-size: 38px;
@@ -40,9 +40,6 @@ export const AppContainer = styled.div`
     width: 75%;
     max-width: 1000px;
     margin: 0 auto;
-    @media (max-width: 900px) {
-        width: 90%;
-    }
 `;
 
 export const FlexColumn = styled.div`

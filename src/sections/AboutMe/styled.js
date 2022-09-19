@@ -14,5 +14,5 @@ export const AboutMeContainer = styled.section`
 
 export const StyledParagraph = styled.p`
     font-size: 16px;
-    margin: 0 2em;
+    margin: 1em 2em;
 `;

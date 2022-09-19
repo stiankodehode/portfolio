@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { stack as Menu } from "react-burger-menu";
 import "./HamburgerMenu/hamburgerMenu.css";
-import { StyledNavLink } from "./Navbar/styled";
+import { FlexRow, StyledNavLink } from "./Navbar/styled";
 import {
     StyledNav,
     StyledDropDown,
@@ -10,16 +10,16 @@ import {
     StyledDropDownContent,
 } from "./Navbar/styled";
 import DropdownSVG from "../img/dropdown.svg";
+import languageSVG from "../img/languageSVG.svg";
+
 const HamurgerMenu = (props) => {
-    const [navItems, setNavItems] = useState(props.navItems);
+    const navItems = props.navItems;
     const [isOpen, setIsOpen] = useState(false);
 
     // Function for closing the hamburger menu when a link is clicked
     const closeMenu = () => {
         setIsOpen((oldState) => !oldState);
     };
-
-    console.log(props);
     const linkProps = {
         onClick: closeMenu,
         activeClass: "active",
@@ -56,8 +56,11 @@ const HamurgerMenu = (props) => {
                     {navItems.contact.navbar}
                 </StyledNavLink>
                 <StyledDropDown>
-                    <span>{props.english ? "ENG" : "NOR"}</span>
-                    <StyledImage src={DropdownSVG} alt="dropdown arrow" />
+                    <FlexRow>
+                        <StyledImage src={languageSVG} alt="language icon" />
+                        <span>{props.english ? "ENG" : "NO"}</span>
+                        <StyledImage src={DropdownSVG} alt="dropdown arrow" />
+                    </FlexRow>
                     <StyledDropDownContent>
                         <StyledButton
                             onClick={props.languageToggle.toggleNorwegian}

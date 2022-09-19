@@ -1,3 +1,4 @@
+// Global components
 import {
     FlexColumn,
     FlexColumnLight,
@@ -14,6 +15,7 @@ import {
 import LanguageIcon from "../components/LanguageIcon";
 import { svgLanguageIcons } from "../img/svgImages";
 
+// mapping the the programming language icons
 const svgIcons = svgLanguageIcons.map((svg, idx) => {
     return <LanguageIcon key={idx} svg={svg} />;
 });
