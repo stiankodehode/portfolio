@@ -6,11 +6,9 @@ import {
     StyledParagraph,
 } from "../components/styled";
 
-import {
-    HeroContainer,
-    ImagePlaceholder,
-    StyledSubHeadline,
-} from "./Hero/styled";
+import Portrait from "../img/portrait.jpg";
+
+import { HeroContainer, StyledSubHeadline, StyledImage } from "./Hero/styled";
 
 import LanguageIcon from "../components/LanguageIcon";
 import { svgLanguageIcons } from "../img/svgImages";
@@ -26,7 +24,7 @@ const Hero = (props) => {
         <HeroContainer id="heroID">
             {/* Image and skills */}
             <FlexColumn>
-                <ImagePlaceholder></ImagePlaceholder>
+                <StyledImage src={Portrait} alt="portrait of Stian" />
             </FlexColumn>
 
             {/* Aside box */}
