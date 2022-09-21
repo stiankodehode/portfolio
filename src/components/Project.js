@@ -5,20 +5,25 @@ import {
     StyledProjectHeadline,
     StyledProjectParagraph,
     StyledLink,
+    NoStyleLink,
 } from "../sections/Projects/styled";
 
 // This is a component for the projects. If lastProject prop is true it doesnt render an underline.
 const Project = (props) => {
     return (
         <ProjectBox lastProject={props.lastProject}>
-            <StyledProjectImage
-                src={props.content.image}
-                alt="my Tenzies app"
-            />
+            <NoStyleLink href={props.content.githubPages}>
+                <StyledProjectImage
+                    src={props.content.image}
+                    alt="my Tenzies app"
+                />
+            </NoStyleLink>
             <StyledProjectInfo>
-                <StyledProjectHeadline>
-                    {props.content.headline}
-                </StyledProjectHeadline>
+                <NoStyleLink href={props.content.githubPages}>
+                    <StyledProjectHeadline>
+                        {props.content.headline}
+                    </StyledProjectHeadline>
+                </NoStyleLink>
                 <StyledProjectParagraph>
                     {props.content.text}
                 </StyledProjectParagraph>

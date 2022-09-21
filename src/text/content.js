@@ -50,7 +50,7 @@ const textContent = {
                 },
             ],
         },
-        footer: { contact: "Kontakt:", socials: "Sosiale media:" },
+        footer: { contact: "Kontakt:", socials: "Sosiale medier:" },
     },
     english: {
         hero: {

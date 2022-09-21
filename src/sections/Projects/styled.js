@@ -17,6 +17,7 @@ export const ProjectBox = styled.article`
     border-bottom: ${(props) => (props.lastProject ? "" : "1px solid black")};
     margin: 1em 0;
     justify-content: space-between;
+    align-items: center;
     width: 90%;
     display: flex;
     @media (max-width: 900px) {
@@ -25,18 +26,18 @@ export const ProjectBox = styled.article`
 `;
 
 export const StyledProjectImage = styled.img`
-    max-width: 50%;
+    width: 100%;
     padding: 1em;
     margin-right: 2em;
     @media (max-width: 900px) {
-        max-width: 75%;
         margin: 0 auto;
     }
 `;
 
 export const StyledProjectHeadline = styled.h3`
     font-size: 28px;
-    margin: 0.5em 0;
+    color: #09001e;
+    margin: 0 0 0.5em;
     text-decoration: underline;
 `;
 
@@ -48,7 +49,7 @@ export const StyledProjectInfo = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 50%;
+    max-width: 45%;
     @media (max-width: 900px) {
         align-items: center;
         margin: 0 auto;
@@ -60,5 +61,14 @@ export const StyledLink = styled.a`
     color: #1b074b;
     &:hover {
         color: rgb(181, 73, 170);
+    }
+`;
+
+export const NoStyleLink = styled.a`
+    text-decoration: none;
+    max-width: 50%;
+    @media (max-width: 900px) {
+        max-width: 75%;
+        margin: 0 auto;
     }
 `;
