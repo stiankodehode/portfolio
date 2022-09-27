@@ -8,9 +8,10 @@ import {
     NoStyleLink,
 } from "../sections/Projects/styled";
 
-// This is a component for the projects. If lastProject prop is true it doesnt render an underline.
+// This is a component for the projects.
 const Project = (props) => {
     return (
+        // If lastProject prop is true there is no underline
         <ProjectBox lastProject={props.lastProject}>
             <NoStyleLink href={props.content.githubPages}>
                 <StyledProjectImage

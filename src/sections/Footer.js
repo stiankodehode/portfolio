@@ -7,7 +7,7 @@ import {
     FlexRow,
 } from "./Footer/styled";
 
-import { socialIcons } from "../img/svgImages";
+import { socialIcons, contactSvgs } from "../img/svgImages";
 
 // mapping the social icons that is brought in externally
 const mappedSocialIcons = socialIcons.map((icon, idx) => {
@@ -38,9 +38,13 @@ const Footer = (props) => {
                 <FlexColumn>
                     <StyledHeading>{content.contact}</StyledHeading>
                     <FooterLink onClick={clipboardCopy}>
-                        stiankodehode@gmail.com
+                        {contactSvgs.phone}
+                        <span>stiant.kodehode@gmail.com</span>
                     </FooterLink>
-                    <FooterLink onClick={clipboardCopy}>12345678</FooterLink>
+                    <FooterLink onClick={clipboardCopy}>
+                        {contactSvgs.mail}
+                        <span>12345678</span>
+                    </FooterLink>
                 </FlexColumn>
                 <FlexColumn>
                     <StyledHeading>{content.socials}</StyledHeading>

@@ -30,6 +30,7 @@ const Contact = (props) => {
             [name]: value,
         }));
     }
+
     // This function submits the form (right now i dont have anywhere to submit)
     function handleSubmit(event) {
         event.preventDefault();

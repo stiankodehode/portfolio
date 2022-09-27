@@ -39,6 +39,10 @@ export const StyledProjectHeadline = styled.h3`
     color: #09001e;
     margin: 0 0 0.5em;
     text-decoration: underline;
+    color: #1b074b;
+    &:hover {
+        color: rgb(181, 73, 170);
+    }
 `;
 
 export const StyledProjectParagraph = styled.p`

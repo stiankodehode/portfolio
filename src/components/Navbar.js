@@ -64,12 +64,15 @@ const Navbar = (props) => {
                         <StyledNavLink {...linkProps} to="heroID">
                             {navItems.hero.navbar}
                         </StyledNavLink>
+
                         <StyledNavLink {...linkProps} to="aboutMeID">
                             {navItems.aboutMe.navbar}
                         </StyledNavLink>
+
                         <StyledNavLink {...linkProps} to="projectsID">
                             {navItems.projects.navbar}
                         </StyledNavLink>
+
                         <StyledNavLink {...linkProps} to="contactID">
                             {navItems.contact.navbar}
                         </StyledNavLink>

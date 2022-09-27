@@ -30,13 +30,12 @@ export const StyledImage = styled.img`
     height: 400px;
     border-radius: 15px;
     @media (max-width: 900px) {
-        
         height: 150px;
         margin-bottom: 2em;
     }
 `;
 
 export const StyledSubHeadline = styled.h3`
-    margin: 0.5em 0;
+    margin: 0.5rem 0 2rem;
     text-align: center;
 `;

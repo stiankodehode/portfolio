@@ -20,6 +20,7 @@ const HamurgerMenu = (props) => {
     const closeMenu = () => {
         setIsOpen((oldState) => !oldState);
     };
+    // All the props for the navbar links
     const linkProps = {
         onClick: closeMenu,
         activeClass: "active",
@@ -46,15 +47,19 @@ const HamurgerMenu = (props) => {
                 <StyledNavLink {...linkProps} to="heroID">
                     {navItems.hero.navbar}
                 </StyledNavLink>
+
                 <StyledNavLink {...linkProps} to="aboutMeID">
                     {navItems.aboutMe.navbar}
                 </StyledNavLink>
+
                 <StyledNavLink {...linkProps} to="projectsID">
                     {navItems.projects.navbar}
                 </StyledNavLink>
+
                 <StyledNavLink {...linkProps} to="contactID">
                     {navItems.contact.navbar}
                 </StyledNavLink>
+
                 <StyledDropDown>
                     <FlexRow>
                         <StyledImage src={languageSVG} alt="language icon" />

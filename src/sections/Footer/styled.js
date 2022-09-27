@@ -10,26 +10,33 @@ export const StyledHeading = styled.h4``;
 
 export const FooterContainer = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 auto;
     width: 75%;
-    @media (max-width: 700px) {
+    max-width: 1000px;
+    @media (max-width: 600px) {
         flex-direction: column;
         width: 90%;
     }
 `;
 
 export const FooterLink = styled.p`
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
     margin: 0.5em 0;
     color: #09001e;
     font-size: 16px;
     cursor: pointer;
+    color: #1b074b;
+    &:hover {
+        color: rgb(181, 73, 170);
+    }
 `;
 
 export const FlexColumn = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
 `;
 
 export const FlexRow = styled.div`

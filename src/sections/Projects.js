@@ -1,7 +1,6 @@
 import { ProjectsContainer } from "./Projects/styled";
 import Project from "../components/Project";
 import { StyledH2 } from "../components/styled";
-import { useState } from "react";
 
 const Projects = (props) => {
     const projectContent = props.content.projects;

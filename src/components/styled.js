@@ -49,18 +49,20 @@ export const FlexColumn = styled.div`
 `;
 
 export const FlexRow = styled.div`
+    max-width: 250px;
     display: flex;
     justify-content: space-evenly;
 `;
 
 export const FlexColumnLight = styled.div`
-    padding: 1em;
+    padding: 1em 2em;
     max-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #ffe8ff;
     border-radius: 10px;
+    margin: 1em 0;
 `;
 export const StyledSvg = styled.svg`
     max-width: 50px;
