@@ -16,6 +16,15 @@ const HamurgerMenu = (props) => {
     const navItems = props.navItems;
     const [isOpen, setIsOpen] = useState(false);
 
+    const toggleScrolling = () => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "visible";
+        }
+    };
+
+    isOpen ? toggleScrolling() : toggleScrolling();
     // Function for closing the hamburger menu when a link is clicked
     const closeMenu = () => {
         setIsOpen((oldState) => !oldState);
@@ -27,7 +36,7 @@ const HamurgerMenu = (props) => {
         spy: true,
         smooth: true,
         offset: -100,
-        duration: 150,
+        duration: 300,
     };
 
     return (

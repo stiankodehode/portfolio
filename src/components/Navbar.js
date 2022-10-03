@@ -30,7 +30,7 @@ const Navbar = (props) => {
         spy: true,
         smooth: true,
         offset: -100,
-        duration: 150,
+        duration: 300,
     };
 
     // render the normal navbar if window width is bigger than 900px

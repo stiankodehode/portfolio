@@ -27,7 +27,7 @@ export const ImagePlaceholder = styled.div`
 `;
 
 export const StyledImage = styled.img`
-    width: 250px;
+    width: 275px;
     border-radius: 15px;
     @media (max-width: 900px) {
         width: 150px;
