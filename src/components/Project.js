@@ -13,7 +13,7 @@ const Project = (props) => {
     return (
         // If lastProject prop is true there is no underline
         <ProjectBox lastProject={props.lastProject}>
-            <NoStyleLink href={props.content.githubPages}>
+            <NoStyleLink target={"_blank"} href={props.content.githubPages}>
                 <StyledProjectImage
                     src={props.content.image}
                     alt="my Tenzies app"
