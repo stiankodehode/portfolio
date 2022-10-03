@@ -35,14 +35,21 @@ const Contact = (props) => {
     function handleSubmit(event) {
         event.preventDefault();
         if (Object.values(formInfo).every((key) => key.length > 0)) {
-            emailjs.sendForm().then(
-                (result) => {
-                    console.log("Email Sent");
-                },
-                (error) => {
-                    console.log("There as an error");
-                }
-            );
+            emailjs
+                .sendForm(
+                    "service_yu20uwl",
+                    "template_zvn2633",
+                    "form",
+                    "So8baMdU63AcGd4s0"
+                )
+                .then(
+                    (result) => {
+                        console.log("Email Sent");
+                    },
+                    (error) => {
+                        console.log("There as an error");
+                    }
+                );
 
             console.log(formInfo);
         } else {

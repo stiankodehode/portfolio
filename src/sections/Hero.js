@@ -15,6 +15,7 @@ import {
 
 import LanguageIcon from "../components/LanguageIcon";
 import { svgLanguageIcons } from "../img/svgImages";
+import Portrait from "../img/portrait.jpg";
 
 // mapping the the programming language icons
 const svgIcons = svgLanguageIcons.map((svg, idx) => {
@@ -27,7 +28,7 @@ const Hero = (props) => {
         <HeroContainer id="heroID">
             {/* Image and skills */}
             <FlexColumn>
-                <ImagePlaceholder></ImagePlaceholder>
+                <StyledImage src={Portrait} />
             </FlexColumn>
 
             {/* Aside box */}

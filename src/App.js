@@ -13,11 +13,15 @@ import { AppContainer, BackgroundImage } from "./components/styled";
 function App() {
     const [languageEnglish, setLanguageEnglish] = useState(false);
 
+    // Content.language based on languageEnglish state
     const content = languageEnglish ? Content.english : Content.norwegian;
 
+    // toggles the languageEnglish state to true to update the app to english
     const toggleEnglish = () => {
         setLanguageEnglish(true);
     };
+
+    // toggles the languageEnglish state to false to update the app back to norwegian
     const toggleNorwegian = () => {
         setLanguageEnglish(false);
     };
