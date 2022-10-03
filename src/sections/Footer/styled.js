@@ -16,7 +16,7 @@ export const FooterContainer = styled.div`
     max-width: 1000px;
     @media (max-width: 600px) {
         flex-direction: column;
-        width: 90%;
+        width: 85%;
     }
 `;
 
