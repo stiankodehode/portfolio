@@ -7,7 +7,7 @@ const textContent = {
     norwegian: {
         hero: {
             navbar: "Hjem",
-            text: "Hei, jeg heter Stian. Jeg er en lærevillig Frontend utvikler som alltid ønsker å utvide min kompetanse",
+            text: "Hei, mitt navn er Stian. Jeg er en lærevillig Frontend utvikler som alltid ønsker å utvide min kompetanse",
             skills: "Kompetanse",
         },
         aboutMe: {

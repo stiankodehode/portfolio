@@ -6,12 +6,7 @@ import {
     StyledParagraph,
 } from "../components/styled";
 
-import {
-    HeroContainer,
-    StyledSubHeadline,
-    StyledImage,
-    ImagePlaceholder,
-} from "./Hero/styled";
+import { HeroContainer, StyledSubHeadline, StyledImage } from "./Hero/styled";
 
 import LanguageIcon from "../components/LanguageIcon";
 import { svgLanguageIcons } from "../img/svgImages";

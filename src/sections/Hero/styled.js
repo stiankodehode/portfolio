@@ -10,7 +10,7 @@ export const HeroContainer = styled.main`
     width: 100%;
     @media (max-width: 900px) {
         flex-direction: column;
-        padding: 6em 0 5em;
+        padding: 6em 0 0;
     }
 `;
 
@@ -27,10 +27,10 @@ export const ImagePlaceholder = styled.div`
 `;
 
 export const StyledImage = styled.img`
-    height: 400px;
+    width: 250px;
     border-radius: 15px;
     @media (max-width: 900px) {
-        height: 150px;
+        width: 150px;
         margin-bottom: 2em;
     }
 `;
