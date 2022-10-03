@@ -43,7 +43,7 @@ const Footer = (props) => {
                     </FooterLink>
                     <FooterLink onClick={clipboardCopy}>
                         {contactSvgs.mail}
-                        <span>12345678</span>
+                        <span>41 68 67 78</span>
                     </FooterLink>
                 </FlexColumn>
                 <FlexColumn>
