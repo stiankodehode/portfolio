@@ -12,7 +12,7 @@ import { socialIcons, contactSvgs } from "../img/svgImages";
 // mapping the social icons that is brought in externally
 const mappedSocialIcons = socialIcons.map((icon, idx) => {
     return (
-        <FooterLink key={idx} href={icon.link}>
+        <FooterLink target={"_blank"} key={idx} href={icon.link}>
             {icon.svg}
         </FooterLink>
     );

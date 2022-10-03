@@ -20,7 +20,7 @@ const Project = (props) => {
                 />
             </NoStyleLink>
             <StyledProjectInfo>
-                <NoStyleLink href={props.content.githubPages}>
+                <NoStyleLink target={"_blank"} href={props.content.githubPages}>
                     <StyledProjectHeadline>
                         {props.content.headline}
                     </StyledProjectHeadline>
@@ -28,10 +28,10 @@ const Project = (props) => {
                 <StyledProjectParagraph>
                     {props.content.text}
                 </StyledProjectParagraph>
-                <StyledLink href={props.content.githubPages}>
+                <StyledLink target={"_blank"} href={props.content.githubPages}>
                     Github pages
                 </StyledLink>
-                <StyledLink href={props.content.github}>
+                <StyledLink target={"_blank"} href={props.content.github}>
                     Github repository
                 </StyledLink>
             </StyledProjectInfo>
