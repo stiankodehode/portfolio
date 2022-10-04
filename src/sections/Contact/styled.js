@@ -63,9 +63,12 @@ export const StyledTextArea = styled.textarea`
 export const StyledButton = styled.button`
     border-radius: 5%;
     padding: 1em;
-    width: 25%;
+    width: 20%;
     border-radius: 10px;
     cursor: pointer;
+    &:hover {
+        background-color: lightgrey;
+    }
     @media (max-width: 900px) {
         width: 40%;
     }
