@@ -7,6 +7,7 @@ export const BackgroundImage = styled.div`
     background-image: url(${BackgroundImg});
     background-repeat: none;
     background-size: cover;
+    height: 100%;
 `;
 
 //--------------------//

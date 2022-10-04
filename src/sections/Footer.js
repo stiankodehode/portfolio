@@ -38,11 +38,11 @@ const Footer = (props) => {
                 <FlexColumn>
                     <StyledHeading>{content.contact}</StyledHeading>
                     <FooterLink onClick={clipboardCopy}>
-                        {contactSvgs.phone}
+                        {contactSvgs.mail}
                         <span>stiant.kodehode@gmail.com</span>
                     </FooterLink>
                     <FooterLink onClick={clipboardCopy}>
-                        {contactSvgs.mail}
+                        {contactSvgs.phone}
                         <span>41 68 67 78</span>
                     </FooterLink>
                 </FlexColumn>
