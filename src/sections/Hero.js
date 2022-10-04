@@ -10,7 +10,7 @@ import { HeroContainer, StyledSubHeadline, StyledImage } from "./Hero/styled";
 
 import LanguageIcon from "../components/LanguageIcon";
 import { svgLanguageIcons } from "../img/svgImages";
-import Portrait from "../img/portrait.jpg";
+import Portrait from "../img/portrait.webp";
 
 // mapping the the programming language icons
 const svgIcons = svgLanguageIcons.map((svg, idx) => {
@@ -23,7 +23,7 @@ const Hero = (props) => {
         <HeroContainer id="heroID">
             {/* Image and skills */}
             <FlexColumn>
-                <StyledImage src={Portrait} />
+                <StyledImage src={Portrait} alt="portrait of Stian" />
             </FlexColumn>
 
             {/* Aside box */}

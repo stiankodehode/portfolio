@@ -1,5 +1,5 @@
-import ProjectImage1 from "../img/tenzies.png";
-import ProjectImage2 from "../img/pokedex.png";
+import ProjectImage1 from "../img/tenzies.webp";
+import ProjectImage2 from "../img/pokedex.webp";
 
 // All the text content is stored here to avoid cluttering
 

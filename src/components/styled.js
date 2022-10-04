@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BackgroundImg from "../img/background.jpg";
+import BackgroundImg from "../img/background.webp";
 
 // GLOBAL COMPONENTS //
 

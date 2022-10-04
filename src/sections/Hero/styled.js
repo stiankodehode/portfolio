@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import { keyframes } from "styled-components";
-
 export const HeroContainer = styled.main`
     padding: 7em 0 0;
     margin: 0 auto 5em;
@@ -39,5 +37,6 @@ export const StyledImage = styled.img`
 
 export const StyledSubHeadline = styled.h3`
     margin: 0.5rem 0 2rem;
+    font-size: 1.25em;
     text-align: center;
 `;

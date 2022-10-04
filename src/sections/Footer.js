@@ -5,6 +5,7 @@ import {
     FlexColumn,
     StyledHeading,
     FlexRow,
+    FooterButton,
 } from "./Footer/styled";
 
 import { socialIcons, contactSvgs } from "../img/svgImages";
@@ -14,6 +15,7 @@ const mappedSocialIcons = socialIcons.map((icon, idx) => {
     return (
         <FooterLink target={"_blank"} key={idx} href={icon.link}>
             {icon.svg}
+            <span>{icon.text}</span>
         </FooterLink>
     );
 });
@@ -37,10 +39,10 @@ const Footer = (props) => {
             <FooterContainer>
                 <FlexColumn>
                     <StyledHeading>{content.contact}</StyledHeading>
-                    <FooterLink onClick={clipboardCopy}>
+                    <FooterButton onClick={clipboardCopy}>
                         {contactSvgs.mail}
                         <span>stiant.kodehode@gmail.com</span>
-                    </FooterLink>
+                    </FooterButton>
                     <FooterLink onClick={clipboardCopy}>
                         {contactSvgs.phone}
                         <span>41 68 67 78</span>
@@ -48,7 +50,7 @@ const Footer = (props) => {
                 </FlexColumn>
                 <FlexColumn>
                     <StyledHeading>{content.socials}</StyledHeading>
-                    <FlexRow>{mappedSocialIcons}</FlexRow>
+                    <FlexColumn>{mappedSocialIcons}</FlexColumn>
                 </FlexColumn>
             </FooterContainer>
         </StyledFooter>

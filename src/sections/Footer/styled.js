@@ -6,7 +6,9 @@ export const StyledFooter = styled.footer`
     padding-bottom: 25px;
 `;
 
-export const StyledHeading = styled.h4``;
+export const StyledHeading = styled.h3`
+    font-size: 1em;
+`;
 
 export const FooterContainer = styled.div`
     display: flex;
@@ -23,6 +25,22 @@ export const FooterContainer = styled.div`
 export const FooterLink = styled.a`
     display: flex;
     align-items: center;
+    gap: 0.75em;
+    margin: 0.5em 0;
+    color: #09001e;
+    font-size: 16px;
+    cursor: pointer;
+    color: #1b074b;
+    &:hover {
+        color: rgb(181, 73, 170);
+    }
+`;
+
+export const FooterButton = styled.button`
+    background: none;
+    padding: 0;
+    border: none;
+    display: flex;
     gap: 0.75em;
     margin: 0.5em 0;
     color: #09001e;

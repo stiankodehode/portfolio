@@ -19,7 +19,8 @@ export const StyledNav = styled.nav`
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 `;
 
-export const StyledNavItems = styled.div`
+export const StyledNavItems = styled.li`
+    list-style: none;
     display: flex;
 `;
 
@@ -77,7 +78,7 @@ export const StyledButton = styled.button`
     }
 `;
 
-export const StyledDropDown = styled.a`
+export const StyledDropDown = styled.li`
     display: inline-block;
     font-size: 20px;
     font-weight: bold;
