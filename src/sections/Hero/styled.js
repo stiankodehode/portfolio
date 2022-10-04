@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { keyframes } from "styled-components";
+
 export const HeroContainer = styled.main`
     padding: 7em 0 0;
     margin: 0 auto 5em;
