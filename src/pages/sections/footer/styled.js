@@ -22,7 +22,7 @@ export const FooterContainer = styled.div`
     }
 `;
 
-export const FooterLink = styled.button`
+export const FooterLink = styled.a`
     display: flex;
     align-items: center;
     gap: 0.75em;
