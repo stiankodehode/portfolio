@@ -4,13 +4,13 @@ import {
     FlexColumnLight,
     FlexRow,
     StyledParagraph,
-} from "../components/styled";
+} from "../../components/styled";
 
-import { HeroContainer, StyledSubHeadline, StyledImage } from "./Hero/styled";
+import { HeroContainer, StyledSubHeadline, StyledImage } from "./hero/styled";
 
-import LanguageIcon from "../components/LanguageIcon";
-import { svgLanguageIcons } from "../img/svgImages";
-import Portrait from "../img/portrait.webp";
+import LanguageIcon from "../../components/LanguageIcon";
+import { svgLanguageIcons } from "../../img/svgImages";
+import Portrait from "../../img/portrait.webp";
 
 // mapping the the programming language icons
 const svgIcons = svgLanguageIcons.map((svg, idx) => {

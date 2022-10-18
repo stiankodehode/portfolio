@@ -5,7 +5,7 @@ import {
     FlexColumn,
     StyledHeading,
     FooterButton,
-} from "./Footer/styled";
+} from "./footer/styled";
 
 import { socialIcons, contactSvgs } from "../../img/svgImages";
 

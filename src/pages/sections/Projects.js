@@ -1,4 +1,4 @@
-import { ProjectsContainer } from "./Projects/styled";
+import { ProjectsContainer } from "./projects/styled";
 import Project from "../../components/Project";
 import { StyledH2 } from "../../components/styled";
 

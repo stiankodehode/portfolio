@@ -6,7 +6,7 @@ import {
     StyledProjectParagraph,
     StyledLink,
     NoStyleLink,
-} from "../sections/Projects/styled";
+} from "../pages/sections/projects/styled";
 
 // This is a component for the projects.
 const Project = (props) => {

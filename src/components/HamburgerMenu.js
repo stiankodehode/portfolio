@@ -1,14 +1,15 @@
 import { useState } from "react";
 import { stack as Menu } from "react-burger-menu";
-import "./HamburgerMenu/hamburgerMenu.css";
-import { FlexRow, StyledNavLink } from "./Navbar/styled";
+import "./hamburgerMenu/hamburgerMenu.css";
 import {
+    FlexRow,
+    StyledNavLink,
     StyledNav,
     StyledDropDown,
     StyledButton,
     StyledImage,
     StyledDropDownContent,
-} from "./Navbar/styled";
+} from "./navbar/styled";
 import DropdownSVG from "../img/dropdown.svg";
 import languageSVG from "../img/languageSVG.svg";
 

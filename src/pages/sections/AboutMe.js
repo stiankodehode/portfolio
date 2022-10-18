@@ -1,7 +1,5 @@
-import { AboutMeContainer } from "./AboutMe/styled";
-import { StyledH2 } from "../components/styled";
-import { StyledParagraph } from "./AboutMe/styled";
-
+import { AboutMeContainer, StyledParagraph } from "./aboutMe/styled";
+import { StyledH2 } from "../../components/styled";
 const AboutMe = (props) => {
     const content = props.content;
 

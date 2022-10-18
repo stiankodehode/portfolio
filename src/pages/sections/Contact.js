@@ -1,4 +1,4 @@
-import { StyledH2 } from "../components/styled";
+import { StyledH2 } from "../../components/styled";
 import {
     ContactContainer,
     StyledForm,
@@ -8,7 +8,7 @@ import {
     StyledInputEmail,
     StyledFlexRow,
     StyledFlexColumn,
-} from "./Contact/styled";
+} from "./contact/styled";
 import { useState } from "react";
 import emailjs from "emailjs-com";
 

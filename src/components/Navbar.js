@@ -8,9 +8,9 @@ import {
     StyledNavItems,
     StyledImage,
     FlexRow,
-} from "./Navbar/styled";
+} from "./navbar/styled";
 import { useState } from "react";
-import "./Navbar/navbar.css";
+import "./navbar/navbar.css";
 import HamurgerMenu from "./HamburgerMenu";
 import DropdownSVG from "../img/dropdown.svg";
 import languageSVG from "../img/languageSVG.svg";
