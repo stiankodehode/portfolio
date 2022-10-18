@@ -4,7 +4,6 @@ import {
     FooterLink,
     FlexColumn,
     StyledHeading,
-    FlexRow,
     FooterButton,
 } from "./Footer/styled";
 
