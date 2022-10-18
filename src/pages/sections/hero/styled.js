@@ -5,12 +5,13 @@ export const HeroContainer = styled.main`
     margin: 0 auto 5em;
     display: flex;
     justify-content: space-around;
-    height: 100%;
     align-items: center;
     width: 100%;
+    max-width: 1000px;
     @media (max-width: 900px) {
         flex-direction: column;
         padding: 6em 0 0;
+        width: 95%;
     }
 `;
 

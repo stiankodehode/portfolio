@@ -14,6 +14,7 @@ export const FooterContainer = styled.div`
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 2em 0;
     width: 85%;
     max-width: 1000px;
     @media (max-width: 600px) {

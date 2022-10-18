@@ -40,6 +40,9 @@ export const AppContainer = styled.div`
     width: 85%;
     max-width: 1000px;
     margin: 0 auto;
+    @media (max-width: 900px) {
+        width: 90%;
+    }
 `;
 
 export const FlexColumn = styled.div`
@@ -63,6 +66,10 @@ export const FlexColumnLight = styled.div`
     background-color: #ffe8ff;
     border-radius: 10px;
     margin: 1em 0;
+    @media (max-width: 500px) {
+        width: 95%;
+        margin: 1em auto;
+    }
 `;
 export const StyledSvg = styled.svg`
     max-width: 50px;
