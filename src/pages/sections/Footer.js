@@ -42,10 +42,10 @@ const Footer = (props) => {
                         {contactSvgs.mail}
                         <span>stiant.kodehode@gmail.com</span>
                     </FooterButton>
-                    <FooterLink onClick={clipboardCopy}>
+                    <FooterButton onClick={clipboardCopy}>
                         {contactSvgs.phone}
-                        <span>41 68 67 78</span>
-                    </FooterLink>
+                        <span>+47 416 86 778</span>
+                    </FooterButton>
                 </FlexColumn>
                 <FlexColumn>
                     <StyledHeading>{content.socials}</StyledHeading>

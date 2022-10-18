@@ -22,7 +22,7 @@ export const FooterContainer = styled.div`
     }
 `;
 
-export const FooterLink = styled.a`
+export const FooterLink = styled.button`
     display: flex;
     align-items: center;
     gap: 0.75em;
@@ -41,6 +41,7 @@ export const FooterButton = styled.button`
     padding: 0;
     border: none;
     display: flex;
+    align-items: center;
     gap: 0.75em;
     margin: 0.5em 0;
     color: #09001e;
