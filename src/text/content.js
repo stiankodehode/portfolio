@@ -7,16 +7,16 @@ const textContent = {
     norwegian: {
         hero: {
             navbar: "Hjem",
-            text: "Hei, mitt navn er Stian. Jeg er en lærevillig Frontend utvikler som alltid ønsker å utvide min kompetanse",
+            text: "Hei, jeg heter Stian. Jeg er en lærevillig Fullstack utvikler som alltid ønsker å utvide min kompetanse.",
             skills: "Kompetanse",
         },
         aboutMe: {
             navbar: "om Meg",
             headline: "om Meg",
             text: [
-                "Teknologi har alltid vært en stor interesse for meg. Når jeg begynte på Kodehode AMO frontend kurset fant jeg fort ut at koding er noe jeg trives med, og har også brukt noe av fritiden min på det.",
-                "På fritiden er den store tingen competitive gaming og spill som er designet rundt at man kan spille hundrevis av timer. Jeg har lært meg å takle press og kritikk for å oppnå høyere rangering, eller vinne turneringer.",
-                "Frontend utvikling gir meg mestringsfølelse. Hvis jeg har gjort noe riktig, ser jeg resultatet med en gang. Å se utviklingen min og finne løsninger på problemer driver meg.",
+                "Jeg har alltid vært ineressert i teknologi, og begynnte på AMO frontend kurset Kodehode i april 2022. Koding trives jeg godt med.",
+                "Javascript er nok det jeg likte best med frontend utvikling. Dette har gjort at jeg har begynt å bevege meg inn i fullstack verden hvor jeg får større utfordringer og får løse flere logiske problemer.",
+                "På fritiden holder jeg på med både kompetitiv og casual gaming. Jeg ønsker alltid å bli bedre og utfordre meg selv så det er nok ikke rart at jeg også trives godt med koding.",
             ],
         },
         contact: {
@@ -55,16 +55,16 @@ const textContent = {
     english: {
         hero: {
             navbar: "Home",
-            text: "Hey, my name is Stian. I'm a Frontend developer who always wants to learn something new",
+            text: "Hey, my name is Stian. I'm a Fullstack developer who always wants to learn something new.",
             skills: "Skills",
         },
         aboutMe: {
             navbar: "about Me",
             headline: "about Me",
             text: [
-                "Technology has always been one of my big interests. When I started the Kodehode AMO frontend course I quickly realised coding is something I enjoy doing and can also do on my free time.",
-                "In my free time I spend a lot of time playing competitive games or games that are designed to be played for several hundred hours or more. I’ve learned to deal with pressure and critique to achieve higher ranks or winning tournaments.",
-                "Frontend development gives me a feeling of mastery. When I do something right, I can immediately see the results. Seeing my own results and solving problems along the way as I develop is a very special feeling.",
+                "Technology has always been an interest of mine. I started AMO course Kodehode in april 2022. And i've been ejoying coding since.",
+                "Javascript is what I liked the most about frontend development. This is a big reason for me to move towards fullstack development where I get bigger challenges and logic puzzles to solve.",
+                "In my free time i spend alot of time playing both competitive and casual games. I always strive to challenge myself and improve, so it's no surprise that I also enjoy coding.",
             ],
         },
         contact: {
